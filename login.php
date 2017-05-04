@@ -15,7 +15,7 @@ include("connection.php");
          $check_user = mysqli_num_rows($run_query);
 
          if($check_user == 0){
-            echo "<script>alert('fucked');</script>";
+            echo "<script>alert('Your credentials may be wrong');</script>";
          }else{
             $_SESSION['username']= $username;
             echo "<script>window.open('welcome.php', '_self');</script>";
